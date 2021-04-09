@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'icons';
+  src:
+    url('fonts/icons.ttf?2jmoq3') format('truetype'),
+    url('fonts/icons.woff?2jmoq3') format('woff'),
+    url('fonts/icons.svg?2jmoq3#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="_icon-"], [class*=" _icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-clock:before {
+  content: "\e900";
+}
+._icon-dollar:before {
+  content: "\e901";
+}
+._icon-envelope:before {
+  content: "\e902";
+}
+._icon-google:before {
+  content: "\e903";
+}
+._icon-graduation:before {
+  content: "\e904";
+}
+._icon-linkedin:before {
+  content: "\e905";
+}
+._icon-peace:before {
+  content: "\e906";
+}
+._icon-phone:before {
+  content: "\e907";
+}
+._icon-rocket:before {
+  content: "\e908";
+}
+._icon-settings:before {
+  content: "\e909";
+}
+._icon-twitter:before {
+  content: "\e90a";
+}
+._icon-user:before {
+  content: "\e90b";
+}
