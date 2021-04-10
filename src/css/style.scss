@@ -39,7 +39,6 @@
 		}
 }
 
-
 .boostup {
   background-color: #709dca;
   &__container {
@@ -112,6 +111,7 @@
 
   &__slider {
     max-width: 647px;
+    position: relative;
   }
   .slick-slider {
     .slick-list {
@@ -124,8 +124,7 @@
       position: absolute;
       display: flex;
       bottom: -60px;
-      left: 710px;
-
+      left: 275px;
       li button{
         font-size: 0;
       }
@@ -152,6 +151,133 @@
   }
 }
 
+.services {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0 125px;
+  }
+
+  &__tilte {
+    margin-top: 201px;
+    font-family: 'Gotham';
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.38;
+    color: #394b50;
+    padding-bottom: 93px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+    div.icon {
+      width: 58px;
+      -webkit-text-stroke: 2px #709dca;
+      font-size: 50px;
+      text-align: left;
+      color: #9aca40;
+      &:hover{
+        -webkit-text-stroke: 2px #f6772c;
+        color: #9aca40;
+      }
+
+    }
+  }
+
+  &__card {
+    flex: 0 0 50%;
+    display: flex;
+  }
+
+  &__card-describe {
+    max-width: 467px;
+    padding: 0 54px 80px 54px;
+  }
+
+  &__card-title {
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.38;
+    text-align: left;
+    color: #394b50;
+  }
+
+  &__card-text {
+    font-size: 13px;
+    text-align: left;
+    color: #7b7b7b;
+  }
+}
+
+.about {
+
+  &__container {
+    display: flex;
+    justify-content: start;
+    @media screen and (min-width:1700px){
+      max-width: 1700px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+  }
+
+  &__right {
+    width: 100%;
+    background-color: #ffc155;
+    padding:  80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    font-family: 'Gotham';
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: -0.75px;
+    text-align: left;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    width: 505px;
+    font-size: 13px;
+    line-height: 1.85;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  &__btn {
+    max-width: 145px;
+    font-family:'Lato';
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    padding: 18px 0px;
+    margin-top: 33px;
+    border-radius: 2px;
+    border: solid 1px #e7ad48;
+    background-color: #ffc155;
+    &:hover {
+      background: #e7ad48;
+    }
+  }
+}
 
 
 
