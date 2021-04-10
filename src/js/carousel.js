@@ -2,16 +2,20 @@ import  $ from 'jquery';
 
 $(function() {
 
-  $('.').slick({
+  $('.boostup__slider').slick({
     draggable: false,
-    responsive: [
-      {
-        breakpoint: 992,
-        settings: {
-          arrows: false,
-          draggable: true
-        }
-      }
-    ]
+    arrows: false,
+    dots: true,
+
+
+    // responsive: [
+    //   {
+    //     breakpoint: 992,
+    //     settings: {
+    //       arrows: false,
+    //       draggable: true
+    //     }
+    //   }
+    // ]
   });
 });

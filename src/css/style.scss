@@ -13,6 +13,8 @@
 .header {
   position: fixed;
   width: 100%;
+  background-color: white;
+  z-index: 99;
 		&__container {
       display: flex;
       justify-content: space-between;
@@ -25,8 +27,9 @@
 		}
 
 		&__item {
+      font-family: 'Lato';
       padding: 12px 20px;
-      transition: .3s;
+      transition: all 0.3s ease 0s;
       &:hover{
         border-radius: 5px;
         background: rgb(255, 187, 66);
@@ -37,6 +40,118 @@
 }
 
 
+.boostup {
+  background-color: #709dca;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-top: 200px;
+    font-size: 35px;
+    font-family: 'Gotham';
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+  color: #ffffff;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 33px 0 65px 0;
+  }
+
+  &__input-shell{
+    position: relative;
+    i {
+      left: 20px;
+      bottom: 18px;
+      color: #6e6e6e;
+      width: 13px;
+      height: 15px;
+      position: absolute;
+    }
+  }
+
+  &__input {
+    width: 281px;
+    border-radius: 3px;
+    padding: 18px 0;
+    padding-left: 40px;
+    margin: 0 10px;
+
+  }
+
+  &__btn {
+    width: 211px;
+    text-transform: uppercase;
+    padding: 18px 0;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 2px;
+    background-color: #ffbb42;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      color: black;
+    }
+  }
+
+  &__place-slider {
+    height: 280px;
+  }
+
+  &__slider {
+    max-width: 647px;
+  }
+  .slick-slider {
+    .slick-list {
+      overflow: hidden;
+    }
+    .slick-track{
+      display: flex;
+    }
+    .slick-dots {
+      position: absolute;
+      display: flex;
+      bottom: -60px;
+      left: 710px;
+
+      li button{
+        font-size: 0;
+      }
+      li.slick-active {
+        width: 12px;
+        height: 11px;
+        border: solid 2px #1ca8dd;
+        border-radius: 50%;
+      }
+      li {
+        margin: 0 10px;
+        width: 12px;
+        height: 11px;
+        border: solid 2px #dedfe0;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__card {
+    img {
+      width: 647px;
+    }
+  }
+}
+
 
 
 
@@ -46,7 +161,7 @@
 
 // Support Classes
 
-.menu-burger{
+.menu-burger  {
   display: none;
 }
 .shadow {
@@ -155,16 +270,5 @@
 
 
 
-// !! Tip for Carousel, if you want to use Carousel you need to add this class below to your
-// !!section and for safety you need to limit your slide-conteiner by max-width. And of course
-// !!you need to add this slide-container in carousel.js, and connect this js file to app.js
 
-// .slick-slider {
 
-//   .slick-list {
-//     overflow: hidden;
-//   }
-//   .slick-track{
-//     display: flex;
-//   }
-// }
