@@ -6,7 +6,7 @@
 @import "../images/icons/style.css";
 
 
-@import './common-style/style.css';
+@import './common-style/common.scss';
 
 
 
@@ -160,20 +160,11 @@
     padding:0 125px;
   }
 
-  &__tilte {
+  &__title {
     margin-top: 201px;
-    font-family: 'Gotham';
-    font-size: 30px;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-align: center;
   }
 
   &__subtitle {
-    text-align: center;
-    font-size: 16px;
-    line-height: 1.38;
-    color: #394b50;
     padding-bottom: 93px;
   }
 
@@ -273,9 +264,310 @@
     border-radius: 2px;
     border: solid 1px #e7ad48;
     background-color: #ffc155;
+    transition: all 0.3s ease 0s;
     &:hover {
       background: #e7ad48;
     }
+  }
+}
+
+.choose {
+  background-color: #e7edf3;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 194px;
+  }
+
+  &__title {
+    margin-top: 137px;
+  }
+
+  &__subtitle {
+    margin-bottom: 50px;
+  }
+
+  &__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+
+  &__card {
+    padding: 53px 33px;
+    border-radius: 3px;
+    background-color: white;
+    border: solid 1px #ccd5df;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #818b95;
+    max-height: 450px;
+    transition: all 0.3s ease 0s;
+    &:hover{
+      background-color: #709dca;
+      color: white;
+      max-height:500px;
+      height: 500px;
+      .choose__card-text{
+        color: white;
+      }
+      .choose__card-price{
+        color: white;
+      }
+
+    }
+  }
+
+  &__card-title {
+    font-family: 'Lato';
+    font-size: 25px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  &__card-price {
+    font-family: 'Lato';
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffbb42;
+    line-height: 1.1;
+    text-align: center;
+    position: relative;
+    &::after{
+      content: "PER MONTH";
+      position: absolute;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.1;
+      text-align: center;
+      bottom: -10px;
+      left: 2px;
+    }
+
+  }
+  .icon {
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 2.4;
+    vertical-align:text-bottom;
+  }
+
+  &__card-line {
+    width: 329px;
+    height: 0.5px;
+    margin: 16px 0px;
+    background-color: #8eb8e2;
+  }
+
+
+  &__card-text {
+    font-family: 'Lato';
+    font-size: 13.5px;
+    text-align: center;
+    color: #b5bbc1;
+  }
+
+  &__card-btn {
+    font-family: 'Lato';
+    font-size: 14px;
+    text-align: left;
+    margin-top: 35px;
+    padding: 16px 21px;
+    border-radius: 2px;
+    background-color: #ffbb42;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+.work {
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px;
+  }
+
+  &__subtitle {
+    margin-bottom: 112px;
+  }
+
+  &__steps {
+    display: flex;
+  }
+
+  &__step {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    &:nth-child(odd){
+      &::after{
+        content: '';
+        position: absolute;
+        width: 130px;
+        height: 35px;
+        background-image: url('../images/Arrow_1.png');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        top:-30px;
+        left: 220px;
+      }
+    }
+    &:nth-child(2){
+      &::after{
+        content: '';
+        position: absolute;
+        width: 130px;
+        height: 35px;
+        background-image: url('../images/Arrow_2.png');
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        top: 60px;
+        left: 220px;
+      }
+    }
+  }
+
+  &__icon {
+    height: 100%;
+  }
+
+  &__article {
+    margin: 67px 0px 28px 0px;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: center;
+    color: #394b50;
+  }
+
+  &__text {
+    margin-bottom: 91px;
+    font-size: 13px;
+    line-height: 1.69;
+    text-align: center;
+    color: #7b7b7b;
+  }
+
+  &__btn {
+    padding: 18px 27px;
+    border-radius: 2px;
+    background-color: #ffbb42;
+    text-transform: uppercase;
+    color: white;
+    // transition: all 0.3s ease 0s;
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+
+.clients {
+  background-color: #ffc155;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 125px;
+  }
+
+  &__title {
+    color: white;
+  }
+
+  &__subtitle {
+    color: white !important;
+    margin-bottom: 58px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    margin: 10px 18px;
+    padding: 51px 31px;
+    flex: 0 0 46%;
+    display: flex;
+    background-color: white;
+    border-radius: 2px;
+
+  }
+
+  &__img {
+    width: 121px;
+    height: 121px;
+  }
+
+  &__right-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__quote {
+    margin: 8px 0 29px 31px;
+    font-size: 13px;
+    line-height: 1.69;
+    text-align: left;
+    color: #7b7b7b;
+    position: relative;
+    &::before{
+      position: absolute;
+      width: 11px;
+      height: 9px;
+      top: 0;
+      left: -15px;
+      content: "";
+      background-image: url('../images/“up.png');
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+
+    }
+    &::after{
+      position: absolute;
+      width: 11px;
+      height: 9px;
+      bottom: 0px;
+      left: 320px;
+      content: "";
+      background-image: url('../images/“down.png');
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+  }
+
+  &__author {
+    text-transform: uppercase;
+    padding-left: 31px;
+    font-family: 'Lato';
+    font-size: 14px;
+    line-height: 1.57;
+    text-align: left;
+    color: #f6772c;
+    span{
+      color: #99a9ae;
+    }
+
   }
 }
 
@@ -283,6 +575,26 @@
 
 
 
+// freqently used classes
+
+.title {
+  font-family: 'Gotham';
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+button {
+  transition: all 0.3s ease 0s;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #394b50;
+}
 
 
 // Support Classes
