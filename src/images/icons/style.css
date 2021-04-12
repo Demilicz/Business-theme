@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'icons';
   src:
-    url('fonts/icons.ttf?2jmoq3') format('truetype'),
-    url('fonts/icons.woff?2jmoq3') format('woff'),
-    url('fonts/icons.svg?2jmoq3#icons') format('svg');
+    url('fonts/icons.ttf?fyekxr') format('truetype'),
+    url('fonts/icons.woff?fyekxr') format('woff'),
+    url('fonts/icons.svg?fyekxr#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="_icon-"], [class*=" _icon-"]{
+[class^="_icon-"], [class*=" _icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icons' !important;
   speak: never;
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+._icon-facebook:before {
+  content: "\e90c";
+}
 ._icon-clock:before {
   content: "\e900";
 }

@@ -477,7 +477,6 @@
   }
 }
 
-
 .clients {
   background-color: #ffc155;
   &__container {
@@ -570,6 +569,188 @@
 
   }
 }
+
+.newsletter {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-top: 154px;
+  }
+
+  &__subtitle {
+    margin-bottom: 38px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__input-shell {
+    position: relative;
+    i {
+      left: 20px;
+      bottom: 18px;
+      color: #6e6e6e;
+      width: 13px;
+      height: 15px;
+      position: absolute;
+    }
+  }
+
+  &__input {
+    border-radius: 2px;
+    border: solid 1px #cbcbcb;
+    background-color: #ffffff;
+    padding: 18px 0;
+    padding-left: 40px;
+    margin: 0 10px;
+  }
+
+  &__name {
+    width: 308px;
+  }
+
+  &__email {
+    width: 388px;
+  }
+
+  &__btn {
+    width: 211px;
+    text-transform: uppercase;
+    padding: 18px 0;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 2px;
+    background-color: #ffbb42;
+    &:hover {
+      color: black;
+    }
+  }
+
+  &__map {
+    background-image: url('../images/Dotted\ Map.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50% ;
+    height: 550px;
+    width: 1102px;
+    margin: 53px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__address {
+    margin-top: 40px;
+    border-radius: 50%;
+    background-color: #394b50;
+    padding: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    &::after{
+      position: absolute;
+      content: "";
+      bottom: -10px;
+      left: 128px;
+      width: 16px;
+      height: 12px;
+      clip-path: polygon(0 0, 50% 100%, 100% 0);
+      background-color: #394b50;
+    }
+  }
+
+  &__article {
+    font-family: 'LatoBold';
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 13px;
+    line-height: 1.85;
+    text-align: center;
+    color: #aeb7ba;
+    &:nth-child(6){
+      color: #ffbb42;
+    }
+  }
+
+  &__logo {
+    margin-top: 14px;
+      width: 50px;
+      height: 48px
+  }
+
+  &__line {
+    width: 1170px;
+    height: 1px;
+    background-color: #e3e7ec;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__navigation {
+    display: flex;
+    margin: 68px 0 29px 0;
+  }
+
+  &__link {
+    font-family: 'Lato';
+    font-size: 13px;
+    color: #394b50;
+    padding: 0 10px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  &__phone {
+    margin-bottom: 23px;
+    font-family: 'Lato';
+    font-size: 22.5px;
+    text-align: center;
+    color: #394b50;
+  }
+
+  &__social {
+    display: flex;
+    margin-bottom: 52px;
+  }
+
+  &__icon {
+    margin: 0 6px;
+    font-size: 18.5px;
+    text-align: center;
+    color: #709dca;
+    transition: all 0.3s ease 0s;
+    &:hover{
+      color: #ffc155;
+    }
+  }
+
+  &__copyright {
+    padding: 18px 0;
+    font-size: 13px;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    background-color: #709dca;
+  }
+}
+
+
 
 
 
