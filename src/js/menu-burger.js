@@ -29,3 +29,33 @@ document.addEventListener('scroll', () => {
     header.classList.remove("shadow");
 
 });
+
+
+// navigation
+
+const menuLinks = document.querySelectorAll('.header__item');
+const footerLinks = document.querySelectorAll('.footer__link');
+
+if(menuLinks.length > 0){
+  menuLinks.forEach(link => {
+    link.addEventListener('click', onMenuLinkClick)
+  });
+}
+if(footerLinks.length > 0){
+  footerLinks.forEach(link => {
+    link.addEventListener('click', onMenuLinkClick)
+  });
+}
+
+function onMenuLinkClick(e) {
+  const menuLink = e.target;
+  if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+    const gotoBlock = document.querySelector(menuLink.dataset.goto);
+    const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('.header').offsetHeight;
+    window.scrollTo({
+      top: gotoBlockValue,
+      behavior: "smooth"
+    });
+    e.preventDefault();
+  }
+}
