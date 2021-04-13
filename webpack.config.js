@@ -27,6 +27,7 @@ module.exports = {
     noInfo: false,
     stats: 'minimal',
     hot: true,
+
   },
   module: {
     rules: [

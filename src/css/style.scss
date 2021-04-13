@@ -224,10 +224,19 @@
     }
   }
 
+  &__img-container{
+    flex: 0 0 50%;
+    overflow: hidden;
+  }
+
+  &__img {
+    object-fit: fill;
+  }
+
   &__right {
-    width: 100%;
+    flex: 0 0 50%;
     background-color: #ffc155;
-    padding:  80px;
+    padding-left: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -245,7 +254,7 @@
   }
 
   &__text {
-    width: 505px;
+    max-width: 505px;
     font-size: 13px;
     line-height: 1.85;
     text-align: left;
@@ -403,47 +412,52 @@
 
   &__steps {
     display: flex;
+    justify-content: space-between;
   }
 
+
   &__step {
-    flex: 0 0 25%;
+    flex: 0 0 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
+  }
+  &__step_up {
     position: relative;
-    &:nth-child(odd){
-      &::after{
-        content: '';
-        position: absolute;
-        width: 130px;
-        height: 35px;
-        background-image: url('../images/Arrow_1.png');
-        background-position: 0 0;
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-        top:-30px;
-        left: 220px;
-      }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 135px;
+      height: 35px;
+      right: -100px;
+      top: -30px;
+      background-image: url('../images/Arrow_1.png');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
     }
-    &:nth-child(2){
-      &::after{
-        content: '';
-        position: absolute;
-        width: 130px;
-        height: 35px;
-        background-image: url('../images/Arrow_2.png');
-        background-position: 0 0;
-        background-repeat: no-repeat;
-        background-size: 100% auto;
-        top: 60px;
-        left: 220px;
-      }
+  }
+
+  &__step_down {
+    position: relative;
+    &::after{
+      content: "";
+      background-image: url('../images/Arrow_2.png');
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      display: block;
+      position: absolute;
+      right: -100px;
+      top: 80px;
+      width: 135px;
+      height: 35px;
+
     }
   }
 
   &__icon {
-    height: 100%;
+    height: 55px;
+    max-width: 78px;
   }
 
   &__article {

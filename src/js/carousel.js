@@ -6,5 +6,6 @@ $(function() {
     draggable: false,
     arrows: false,
     dots: true,
+    
   });
 });
