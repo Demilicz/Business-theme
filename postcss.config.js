@@ -2,7 +2,9 @@ const autoprefixer = require("autoprefixer");
 
 module.exports = {
   plugins: {
-    autoprefixer: {},
+    autoprefixer: {
+      grid: 'autoplace' 
+    },
     cssnano: {},
     // 'rucksack-css': {},
   }
