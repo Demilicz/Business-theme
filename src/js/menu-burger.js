@@ -52,6 +52,14 @@ function onMenuLinkClick(e) {
   if(menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
     const gotoBlock = document.querySelector(menuLink.dataset.goto);
     const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('.header').offsetHeight;
+
+    if(iconMenu.classList.contains('_active')){
+      document.body.classList.remove('_lock');
+      iconMenu.classList.remove('_active');
+      bodyMenu.classList.remove('_active');
+      document.body.style.overflow = "scroll";
+    }
+
     window.scrollTo({
       top: gotoBlockValue,
       behavior: "smooth"
