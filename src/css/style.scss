@@ -296,13 +296,11 @@
   &__cards {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 75px;
     @media screen and (max-width:1200px){
       margin-bottom: 30px;
     }
-
   }
 
   &__card {
@@ -657,6 +655,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 10px;
     @media screen and (max-width:768px){
       flex: 0 0 50%;
     }
@@ -908,9 +907,9 @@
   &__title {
     margin-top: 154px;
     @media screen and (max-width:992px){
-      margin-top: 60px;
+      margin-top: 61px;
      }
-  
+
   }
 
   &__subtitle {
